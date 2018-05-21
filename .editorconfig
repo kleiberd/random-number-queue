@@ -1,0 +1,10 @@
+# Tab indentation (no size specified)
+[Makefile]
+indent_style = tab
+
+[*.mk]
+indent_style = tab
+
+[*.{yml,yaml}]
+indent_style = space
+indent_size = 4

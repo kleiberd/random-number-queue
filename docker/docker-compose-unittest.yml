@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+    php:
+        image: php:7.2-cli-alpine3.7
+        container_name: rnq-phpunit
+        working_dir: /srv/app
+        entrypoint:
+            - vendor/bin/phpunit
+        volumes:
+            - ./../app:/srv/app
